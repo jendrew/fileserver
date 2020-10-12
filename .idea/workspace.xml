@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37775a20-93e6-42a7-99d7-19b86846cf6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/config/DataConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/dao/FileDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/model/MyFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/service/FileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/service/FileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/storage/FileProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/storage/FileProviderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/web/FileManagerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fileshibernate/web/SearchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/images/android-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/images/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/images/ios-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/images/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/folder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/index_backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/layout/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/bak/db.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/bak/db.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/db.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/db.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/config/DataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/config/SSLConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dao/FileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dto/PasswordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dto/PrefsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/dto/SecretDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/model/MyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/storage/FileProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/storage/FileProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/validation/PasswordsMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/validation/PasswordsMatchValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FlashMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/RandomString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/android-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/ios-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/database.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/entercode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/folder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index_backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/bare.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/bare2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="filehibernate" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="filehibernate" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="filehibernate" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YltrgJMKBFK8hmAG4UFx6YjpZI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\resources\templates" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\resources\static\images" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\resources\templates\layout" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\java\org\example\fileshibernate\validation" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\java\org\example\fileshibernate\dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.fileshibernate.config" />
+      <recent name="org.example.fileshibernate.web" />
+      <recent name="org.example.fileshibernate.dao" />
+      <recent name="org.example.fileshibernate" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\data" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\data\bak" />
+      <recent name="D:\Users\jedrz\programowanie\projekty\filehibernate\src\main\resources\templates\layout" />
+      <recent name="C:\Users\jedrz\Documents\programowanie\filehibernate\src\main\resources\templates" />
+      <recent name="C:\Users\jedrz\Documents\programowanie\filehibernate\src\main\resources\static\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.fileshibernate.Application" />
+      <module name="filehibernate.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.fileshibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="filehibernate [bootRepackage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRepackage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.filehibernate [bootRepackage]" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37775a20-93e6-42a7-99d7-19b86846cf6a" name="Default Changelist" comment="" />
+      <created>1583529208185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583529208185</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Users/jedrz/programowanie/projekty/filehibernate/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1908" y="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583627491915">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1908" y="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1583627491915" />
+    <state x="2376" y="955" key="#com.intellij.ide.util.MemberChooser" timestamp="1585949564857">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="2376" y="955" key="#com.intellij.ide.util.MemberChooser/0.0.3840.2120@0.0.3840.2120" timestamp="1585949564857" />
+    <state x="2208" y="657" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584649546155">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="2208" y="657" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1584649546155" />
+    <state x="1313" y="1078" key="#xdebugger.evaluate" timestamp="1584651982399">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1313" y="1078" key="#xdebugger.evaluate/0.0.3840.2120@0.0.3840.2120" timestamp="1584651982399" />
+    <state x="1072" y="557" key="FileChooserDialogImpl" timestamp="1585767680130">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="536" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584123023824" />
+    <state x="1072" y="557" key="FileChooserDialogImpl/0.0.3840.2120@0.0.3840.2120" timestamp="1585767680130" />
+    <state width="3797" height="455" key="GridCell.Tab.0.bottom" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585596963719" />
+    <state width="3797" height="455" key="GridCell.Tab.0.bottom/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.0.center" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585596963719" />
+    <state width="3797" height="455" key="GridCell.Tab.0.center/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.0.left" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585596963719" />
+    <state width="3797" height="455" key="GridCell.Tab.0.left/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.0.right" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585596963719" />
+    <state width="3797" height="455" key="GridCell.Tab.0.right/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.1.bottom" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3797" height="455" key="GridCell.Tab.1.bottom/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.1.center" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3797" height="455" key="GridCell.Tab.1.center/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.1.left" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3797" height="455" key="GridCell.Tab.1.left/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state width="3797" height="455" key="GridCell.Tab.1.right" timestamp="1586304098441">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3797" height="455" key="GridCell.Tab.1.right/0.0.3840.2120@0.0.3840.2120" timestamp="1586304098441" />
+    <state x="1285" y="756" key="SettingsEditor" timestamp="1585950696735">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1285" y="756" key="SettingsEditor/0.0.3840.2120@0.0.3840.2120" timestamp="1585950696735" />
+    <state x="2228" y="832" key="com.intellij.ide.util.TipDialog" timestamp="1585767804908">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1114" y="408" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584120751141" />
+    <state x="2228" y="832" key="com.intellij.ide.util.TipDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1585767804908" />
+    <state x="1636" y="850" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584655256311">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1636" y="850" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.3840.2120@0.0.3840.2120" timestamp="1584655256311" />
+    <state x="1099" y="602" key="run.anything.popup" timestamp="1584648566605">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1099" y="602" key="run.anything.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1584648566605" />
+    <state x="1583" y="495" key="search.everywhere.popup" timestamp="1585950690102">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1583" y="495" key="search.everywhere.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1585950690102" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/model/User.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/fileshibernate/web/FileManagerController.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/filehibernate$Application.ic" NAME="Application Coverage Results" MODIFIED="1583623724855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.fileshibernate.*</FILTER>
+    </SUITE>
+  </component>
+</project>

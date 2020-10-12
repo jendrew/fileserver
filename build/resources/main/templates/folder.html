@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html layout:decorator="layout/base"
+      lang="pl"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Strona główna</title>
+
+</head>
+<body>
+<span layout:fragment="title" class="mdl-layout-title">Pliki</span>
+
+
+<div layout:fragment="content">
+
+    <div class="user-changeprefs">
+    <form th:action="@{'/changeprefs'}" th:object="${prefsDto}">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="sort" name="sort" th:field="*{sortingOrder}" onchange="this.form.submit()">
+                <option th:value="DATE">Data</option>
+                <option th:value="NAME">Nazwa</option>
+
+            </select>
+            <label class="mdl-textfield__label" for="sort">Sortowanie:</label>
+        </div>
+        <div class="user-separator"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="dir" name="dir" th:field="*{direction}" onchange="this.form.submit()">
+                <option th:value="ASC">Rosnąco</option>
+                <option th:value="DESC">Malejąco</option>
+
+            </select>
+            <label class="mdl-textfield__label" for="dir">Kierunek:</label>
+        </div>
+    </form>
+    </div>
+
+
+    <ul class="demo-list-three mdl-list">
+
+
+        <!--Jeden wiersz listy plików-->
+        <li th:if="${up} != null" class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+                <a th:href="|/files/${up.id}|">
+                    <i class="material-icons mdl-list__item-avatar">arrow_upward</i>
+                    <span>Do góry</span>
+                </a>
+                <span class="mdl-list__item-text-body">
+                    Przejdź folder wyżej
+                </span>
+            </span>
+<!--            <span class="mdl-list__item-secondary-content">-->
+<!--                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">link</i></a>-->
+<!--            </span>-->
+        </li>
+
+        <!--Jeden wiersz listy plików-->
+
+
+        <!--Jeden wiersz listy plików-->
+        <li th:each="element: ${folder}" class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+                <a th:href="|/files/${element.id}|">
+                    <i class="material-icons-outlined mdl-list__item-avatar" th:text="${element.isDirectory} ? folder : insert_drive_file"></i>
+                    <span th:text="${element.name}"></span>
+                </a>
+                <span class="mdl-list__item-text-body" >
+                    <span th:text="${'Data modyfikacji: ' + T(org.example.fileshibernate.Utils).getDate(element.lastModified)}"></span>
+                </span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+                <span th:if="${element.isDirectory} == false" th:text="${T(org.example.fileshibernate.Utils).getFileSize(element.size)}"></span>
+<!--/*
+                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">link</i></a>
+*/-->
+            </span>
+        </li>
+        <!--Jeden wiersz listy plików-->
+    </ul>
+
+</div>
+
+</body>
+</html>
+

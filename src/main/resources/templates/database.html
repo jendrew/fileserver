@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html layout:decorator="layout/base"
+      lang="pl"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Strona główna</title>
+
+</head>
+<body>
+<span layout:fragment="title" class="mdl-layout-title">Pliki</span>
+
+
+<div layout:fragment="content">
+
+
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col">
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text" th:text="${count} + ' plików'">Welcome</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Baza danych zawiera w tej chwili <span th:text="${count}"></span> plików.
+                </div>
+<!--                <div class="mdl-card__actions mdl-card&#45;&#45;border">-->
+<!--                    <a class="mdl-button mdl-button&#45;&#45;colored mdl-js-button mdl-js-ripple-effect">-->
+<!--                        Get Started-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="mdl-card__menu">-->
+<!--                    <button class="mdl-button mdl-button&#45;&#45;icon mdl-js-button mdl-js-ripple-effect">-->
+<!--                        <i class="material-icons">share</i>-->
+<!--                    </button>-->
+<!--                </div>-->
+            </div>
+
+
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Indeksuj pliki</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Uruchamia indeksowanie bazy danych
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+
+                    <a th:href="@{/admin/index}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Indeksuj
+                    </a>
+                </div>
+<!--                <div class="mdl-card__menu">-->
+<!--                    <button class="mdl-button mdl-button&#45;&#45;icon mdl-js-button mdl-js-ripple-effect">-->
+<!--                        <i class="material-icons">share</i>-->
+<!--                    </button>-->
+<!--                </div>-->
+            </div>
+
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Usuń pliki</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Usuwa wszystkie pliki z bazy danych
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a th:href="@{/admin/delete}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        USUŃ
+                    </a>
+                </div>
+<!--                <div class="mdl-card__menu">-->
+<!--                    <button class="mdl-button mdl-button&#45;&#45;icon mdl-js-button mdl-js-ripple-effect" >-->
+<!--                        <i class="material-icons">share</i>-->
+<!--                    </button>-->
+<!--                </div>-->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
+

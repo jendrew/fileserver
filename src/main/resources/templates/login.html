@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl" layout:decorator="layout/bare"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="robots" content="noindex"/>
+</head>
+
+<body>
+<section layout:fragment="content">
+
+
+
+
+
+    <style>
+        .demo-card-wide.mdl-card {
+          width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+          color: #fff;
+          height: 176px;
+          background: url('/images/logo.gif') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+          color: #fff;
+        }
+
+        .mdl-layout {
+            align-items: center;
+          justify-content: center;
+        }
+        .mdl-layout__content {
+            padding: 24px;
+            flex: none;
+        }
+
+
+</style>
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Logowanie</h2>
+        </div>
+        <form  th:action="@{/login}" th:object="${user}" method="post" class="m-4">
+
+        <div class="mdl-card__supporting-text">
+            Siemano! Podaj nazwę użytkownika i hasło i wbijaj. Jeśli ich nie masz, skorzystaj z Supertajnego Kodu, żeby
+            się <a th:href="@{/register}">zarejestrować</a>. Jeśli nie masz supertajnego kodu, to odezwij się do J.
+
+            <div class="mdl-textfield mdl-js-textfield" th:classappend="${#fields.hasErrors('username') ? 'is-invalid is-dirty' : ''}">
+                <input class="mdl-textfield__input" type="text" id="inputUsername" th:field="*{username}"  />
+                <label class="mdl-textfield__label" for="inputUsername">Nazwa użytkownika</label>
+                <span class="mdl-textfield__error" th:errors="*{username}">Jakiś problem!</span>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="inputPassword" th:field="*{password}" />
+                <label class="mdl-textfield__label" for="inputPassword">Hasło</label>
+                <span class="mdl-textfield__error" th:errors="*{password}">Jakiś problem!</span>
+
+            </div>
+
+        </div>
+
+        <div class="mdl-card__actions mdl-card--border " th:if="${flash} != null" th:object="${flash}">
+            <div class="mdl-card__supporting-text" th:classappend="*{#strings.toLowerCase(status) == 'failure'} ? 'status-danger' : 'status-ok'"
+                th:text="*{message}">
+
+            </div>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">
+                Wbijam
+            </button>
+        </div>
+
+        <div class="mdl-card__actions mdl-card--border ">
+            <div class="mdl-card__supporting-text">
+                Nie mam jeszcze hasła, ale mam tajny kod i chcę się <a th:href="@{/register}">zarejestrować</a>.
+            </div>
+        </div>
+        </form>
+
+
+    </div>
+
+
+
+
+</section>
+
+
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html layout:decorator="layout/base"
+      lang="pl"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Strona główna</title>
+
+</head>
+<body>
+<span layout:fragment="title" class="mdl-layout-title">Użytkownicy</span>
+
+
+<div layout:fragment="content">
+
+
+
+
+    <ul class="demo-list-three mdl-list">
+
+
+
+        <!--Jeden wiersz listy userów-->
+        <li th:each="element: ${users}" class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+
+                    <i class="material-icons-outlined mdl-list__item-avatar" >account_circle</i>
+                    <span th:text="${element.username}"></span>
+
+                <span class="mdl-list__item-text-body" >
+                    <span th:text="${'Sekret: ' + element.secret}"></span>
+                </span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+                <span th:text="${element.role.name}"></span>
+                <a class="mdl-list__item-secondary-action" th:href="@{'/admin/edituser/' + ${element.id}}"><i class="material-icons">edit</i></a>
+            </span>
+        </li>
+
+        <form th:action="@{${action} != null ? ${action} : '/admin/adduser'}" method="post" th:object="${user}">
+        <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+
+                    <i class="material-icons-outlined mdl-list__item-avatar" >edit</i>
+
+                        <input type="hidden" th:field="*{id}"/>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="username" th:field="*{username}" />
+                        <label class="mdl-textfield__label" for="username">Nazwa użytkownika</label>
+                      </div>
+
+
+<!--                <span class="mdl-list__item-text-body" >-->
+<!--                    <span th:text="${'Sekret: ' + element.secret}"></span>-->
+<!--                </span>-->
+            </span>
+            <span class="mdl-list__item-secondary-content">
+
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <select class="mdl-textfield__input" id="role" name="role" th:field="*{role.id}">
+                      <option th:each="role: ${roles}" th:value="${role.id}" th:text="${role.name}"></option>
+                    </select>
+                    <label class="mdl-textfield__label" for="role">Rola</label>
+                  </div>
+
+
+            </span>
+        </li>
+        </form>
+        <!--Jeden wiersz listy plików-->
+    </ul>
+
+</div>
+
+</body>
+</html>
+

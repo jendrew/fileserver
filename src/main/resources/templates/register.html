@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl" layout:decorator="layout/bare"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="robots" content="noindex"/>
+</head>
+
+<body>
+<section layout:fragment="content">
+
+    <style>
+        .demo-card-wide.mdl-card {
+          width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+          color: #fff;
+          height: 176px;
+          background: url('/images/logo.gif') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+          color: #fff;
+        }
+
+        .mdl-layout {
+            align-items: center;
+          justify-content: center;
+        }
+        .mdl-layout__content {
+            padding: 24px;
+            flex: none;
+        }
+</style>
+
+
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Welcome</h2>
+        </div>
+        <form  th:action="@{/register}" th:object="${passwordDto}" method="post" class="m-4">
+
+            <div class="mdl-card__supporting-text">
+
+
+                Twoja nazwa użytkownika to: <strong><span th:text="${username}"></span></strong>. Możesz jej użyć
+                podczas logowania. Poniżej wpisz mocne hasło. Takie wiesz... minimum 8 znaków, jakieś cyfry, znaki
+                specjalne - zaszalej.
+
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="inputPassword" th:field="*{password}" />
+                    <label class="mdl-textfield__label" for="inputPassword">Hasło</label>
+
+                </div>
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="repetedPassword" th:field="*{repeatedPassword}" />
+                    <label class="mdl-textfield__label" for="repetedPassword">I jeszcze raz poproszę...</label>
+
+                </div>
+            </div>
+
+            <!--Error field from flash message -->
+            <div class="mdl-card__actions mdl-card--border " th:if="${flash} != null" th:object="${flash}">
+                <div class="mdl-card__supporting-text" th:classappend="*{#strings.toLowerCase(status) == 'failure'} ? 'status-danger' : 'status-ok'"
+                     th:text="*{message}">
+
+                </div>
+            </div>
+
+            <!--Error field from binding result - -->
+            <div class="mdl-card__actions mdl-card--border " th:object="${passwordDto}" th:if="${#fields.hasErrors('password') OR #fields.hasErrors('${passwordDto}')}">
+                <div class="mdl-card__supporting-text status-danger" th:errors="*{password}"></div>
+                <div class="mdl-card__supporting-text status-danger" th:if="${#fields.hasErrors('${passwordDto}')}" th:errors="${passwordDto}"></div>
+            </div>
+
+
+            <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">
+                    Rejestruję
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
+
